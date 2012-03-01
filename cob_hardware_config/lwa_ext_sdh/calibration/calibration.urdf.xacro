@@ -8,6 +8,6 @@
 	<property name="arm_4_ref" value="-0.034" />
 	<property name="arm_5_ref" value="-0.1" />
 	<property name="arm_6_ref" value="0.0" />
-	<property name="arm_7_ref" value="-2.34" />
+	<property name="arm_7_ref" value="2.3724" />
 
 </robot>
