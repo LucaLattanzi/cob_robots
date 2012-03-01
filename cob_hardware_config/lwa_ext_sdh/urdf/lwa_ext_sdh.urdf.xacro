@@ -10,7 +10,7 @@
   <include filename="$(find cob_description)/urdf/materials.urdf.xacro" />
 
   <!-- calibration -->
-  <include filename="$(find cob_hardware_config)/lwa_ext/calibration/calibration.urdf.xacro" />
+  <include filename="$(find cob_hardware_config)/lwa_ext_sdh/calibration/calibration.urdf.xacro" />
 
   <!-- schunk lwa_extended -->
   <include filename="$(find schunk_description)/urdf/lwa_extended/lwa_extended.urdf.xacro" />
@@ -59,7 +59,7 @@
 
   <!-- tof camera -->
   <xacro:cob_tof_v0 name="tof" ros_topic="/tof/point_cloud2" parent="base_link">
-    <origin xyz="-0.825 0 0.723" rpy="0 -0.17 0" />
+    <origin xyz="-0.8 0 0.723" rpy="0 -0.17 0" />
   </xacro:cob_tof_v0>
 
 </robot>
