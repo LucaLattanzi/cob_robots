@@ -1,0 +1,18 @@
+joint_names: ["arm_1_joint","arm_2_joint","arm_3_joint","arm_4_joint","arm_5_joint","arm_6_joint","arm_7_joint"]
+
+# single positions
+home: [[0.0,0.0,0.0,0.0,0.0,0.0,0.0]]
+home2: [[0.0,0.0,0.0,1.34,0.0,0.0,0.0]]
+pregrasp1: [[2.12,0.77,0.0,1.87,0.0,-1.08,2.1207963]]
+pregrasp2: [[2.0,0.77,0.0,1.87,0.0,-1.08,0.0]]
+position1: [[1.3,1.7,0,0.3,0.6685,0.405,0.0]]
+position2: [[2.6,1.6,-1.8,0.4,0.0,0.2,0.0]]
+position3: [[3.2,1.6,-1.8,0.4,0.0,0.2,0.0]]
+testpos1: [[1.3,1.48,0.0,0.0,0.0,0.0,0.0]]
+testpos2: [[3,1.48,-0.45,0.11,0.03,0.0,-0.02]]
+
+
+#trajectories
+grasp-to-tray: [pregrasp, intermediateback, intermediatefront, overtray]
+tray-to-folded: [intermediatefront, intermediateback, folded]
+grasp12: [pregrasp1, pregrasp2, pregrasp1, pregrasp2, pregrasp1, pregrasp2]

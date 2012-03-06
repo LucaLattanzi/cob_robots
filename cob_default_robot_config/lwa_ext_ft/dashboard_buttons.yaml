@@ -1,0 +1,41 @@
+#group:
+#  group_name: <group_name>
+#  component_name: <component_name>
+#  buttons: [[button_name1,function_name1,parameter_name2,
+#    [button_name2,function_name2,parameter_name2]]
+
+group1:
+  group_name: arm settings
+  component_name: arm
+  buttons: [[stop,trigger,stop],
+    [init,trigger,init],
+    [recover,trigger,recover],
+    [undefined mode,mode,undefined],
+    [position mode,mode,position],
+    [velocity mode,mode,velocity],
+    [gravcomp mode,mode,gravcomp]]
+group5:
+  group_name: arm pos
+  component_name: arm
+  buttons: [[Stop,trigger,stop],
+    [Home,move,home],
+    [Pos. 1,move,position1],
+    [Pos. 2,move,position2],
+    [Pos. 1 (simple),move,testpos1],
+    [Pos. 2 (simple),move,testpos2],
+    [Edge,move,home2],
+    [Pregrasp,move,pregrasp1],
+    [Test Traj.,move,grasp12]]
+
+group3:
+  group_name: sdh
+  component_name: sdh
+  buttons: [[stop,trigger,stop],
+    [init,trigger,init],
+    [home,move,home],
+    [cyl. closed,move,cylclosed],
+    [cyl. open,move,cylopen],
+    [spher. closed,move,spherclosed],
+    [spher. open,move,spheropen],
+    [point,move,point],
+    [fist,move,fist]]

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <!-- trajectory controller: where to start? -->
+    <include file="$(find cob_trajectory_controller)/ros/launch/trajectory_controller.launch" />
+    
+	<node name="arm_controller" pkg="schunk_powercube_chain" type="schunk_powercube_chain" cwd="node" respawn="false" output="screen" >
+		<rosparam command="load" file="$(find cob_hardware_config)/lwa_ext_ft/config/lwa.yaml"/>
+	</node>
+
+</launch>

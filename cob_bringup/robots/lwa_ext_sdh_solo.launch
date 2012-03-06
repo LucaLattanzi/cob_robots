@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- upload robot_description -->
+    	<include file="$(find cob_hardware_config)/lwa_ext_sdh/urdf/upload_lwa_ext_sdh.launch" />
+
+	<!-- start robot_state_publisher -->
+	<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+		<!--remap from="/joint_states" to="/joint_states_combined"/-->
+	</node>
+
+    	<!-- start arm and hand-->
+    	<include file="$(find cob_bringup)/robots/lwa_ext_sdh.launch" />
+
+	<!-- kinematics -->
+	<!--include file="$(find cob_manipulator)/ros/launch/cob3_arm_kinematics.launch" /-->
+
+	<!-- start additional packages -->
+	<include file="$(find cob_joint_state_aggregator)/ros/launch/joint_state_aggregator.launch" />
+
+</launch>
